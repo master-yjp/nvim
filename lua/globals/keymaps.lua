@@ -35,8 +35,8 @@ vim.cmd "map sh : set nosplitright<CR>:vsplit<CR> "
 vim.cmd "map sk : set nosplitbelow<CR>:split<CR> "
 vim.cmd "map sj : set splitbelow<CR>:split<CR> "
 -- Resize with arrows
-keymap("n", "<C-Up>", ":resize -2<CR>", opts)
-keymap("n", "<C-Down>", ":resize +2<CR>", opts)
+keymap("n", "<C-Up>", ":resize +2<CR>", opts)
+keymap("n", "<C-Down>", ":resize -2<CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize +2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize -2<CR>", opts)
 

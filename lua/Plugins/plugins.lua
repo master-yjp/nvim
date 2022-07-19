@@ -79,7 +79,8 @@ return packer.startup(function(use)
   }
   use "p00f/nvim-ts-rainbow"
   use "nvim-treesitter/playground" 
-
+ --the welcome 
+  use "mhinz/vim-startify"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
