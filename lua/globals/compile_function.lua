@@ -1,6 +1,6 @@
 vim.cmd [[
 " Compile function
-noremap m :call CompileRunGcc()<CR>
+noremap com :call CompileRunGcc()<CR>
 func! CompileRunGcc()
 	exec "w"
 	if &filetype == 'c'
