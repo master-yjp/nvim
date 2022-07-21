@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "/home/masterj/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["markdown-preview.vim"] = {
+    loaded = true,
+    path = "/home/masterj/.local/share/nvim/site/pack/packer/start/markdown-preview.vim",
+    url = "https://github.com/iamcco/markdown-preview.vim"
+  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/home/masterj/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
