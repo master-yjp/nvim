@@ -33,6 +33,7 @@ keymap("n", "<leader>l","$",opts)
 
 vim.cmd " map J 5j " 
 vim.cmd " map K 5k "
+vim.cmd "noremap <LEADER><CR> :nohlsearch<CR>"
 
 vim.cmd "map sl : set splitright<CR>:vsplit<CR> "
 vim.cmd "map sh : set nosplitright<CR>:vsplit<CR> "
