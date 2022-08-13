@@ -31,15 +31,15 @@ keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 keymap("n", "<leader>h","^",opts)
 keymap("n", "<leader>l","$",opts)
 
-vim.cmd " map J 5j " 
+vim.cmd " map J 5j "
 vim.cmd " map K 5k "
 vim.cmd "noremap <LEADER><CR> :nohlsearch<CR>"
 
-vim.cmd "map sl : set splitright<CR>:vsplit<CR> "
-vim.cmd "map sh : set nosplitright<CR>:vsplit<CR> "
-vim.cmd "map sk : set nosplitbelow<CR>:split<CR> "
-vim.cmd "map sj : set splitbelow<CR>:split<CR> "
--- Resize with arrows
+vim.keymap.set('n','sl',':set splitright<CR>:vsplit<CR>',opts)
+vim.keymap.set('n','sh',':set nosplitright<CR>:vsplit<CR>',opts)
+vim.keymap.set('n','sk',':set nosplitbelow<CR>:split<CR>',opts)
+vim.keymap.set('n','sj',':set splitbelow<CR>:split<CR>',opts)
+--Resize with arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)
 keymap("n", "<C-Down>", ":resize -2<CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize +2<CR>", opts)
@@ -83,3 +83,15 @@ keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 
 --format 
 keymap("n", "<leader>m", ":Format<cr>", opts)
+
+
+-- Do not yank with x
+vim.keymap.set('n','x','"_x')
+--increment/decrement
+vim.keymap.set('n','+','<C-a>')
+vim.keymap.set('n','-','<C-x>')
+-- Delete a word backwards
+vim.keymap.set('n', 'dw', 'vb"_d')
+--select all 
+vim.keymap.set('n','<C-a>','gg<S-v>G')
+vim.keymap.set('n','te',':tabedit<CR>',opts)
