@@ -55,6 +55,7 @@ return packer.startup(function(use)
   use "lunarvim/darkplus.nvim"
   use 'folke/tokyonight.nvim'
   use 'nanotech/jellybeans.vim'
+  use 'theniceboy/nvim-deus'
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
@@ -75,7 +76,7 @@ return packer.startup(function(use)
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
     -- Telescope
-	use({ "nvim-telescope/telescope.nvim", commit = "d96eaa914aab6cfc4adccb34af421bdd496468b0" }) 
+	use "nvim-telescope/telescope.nvim" 
     -- Treesitter
   use {
     "nvim-treesitter/nvim-treesitter",
@@ -86,6 +87,8 @@ return packer.startup(function(use)
 
   --markdown preview 
   use "iamcco/markdown-preview.vim"
+  --tex
+  
   --alpha
  	use "goolord/alpha-nvim" 
   -- toggleterm
