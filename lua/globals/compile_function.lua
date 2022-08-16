@@ -1,4 +1,4 @@
-vim.cmd [[
+vim.cmd([[
 " Compile function
 noremap com :call CompileRunGcc()<CR>
 func! CompileRunGcc()
@@ -24,12 +24,13 @@ func! CompileRunGcc()
 		silent! exec "!chromium % &"
 	elseif &filetype == 'markdown'
 		exec "MarkdownPreview"
-	elseif &filetype == 'tex'
-		silent! exec "VimtexStop"
-		silent! exec "VimtexCompile"
-	elseif &filetype == 'go'
+  elseif &filetype == 'go'
 		set splitbelow
 		:sp
 		:term go run %
 	endif
-endfunc]]
+endfunc]])
+
+vim.cmd [[map <leader>c :w! \| !compiler "<c-r>%"<CR>]]
+vim.cmd [[ map <leader>p :!opout <c-r>%<CR><CR>]]
+vim.cmd([[autocmd VimLeave *.tex !texclear %]])

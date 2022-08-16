@@ -28,8 +28,6 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 -- Nvimtree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
-keymap("n", "<leader>h","^",opts)
-keymap("n", "<leader>l","$",opts)
 
 vim.cmd " map J 5j "
 vim.cmd " map K 5k "
@@ -95,3 +93,4 @@ vim.keymap.set('n', 'dw', 'vb"_d')
 --select all 
 vim.keymap.set('n','<C-a>','gg<S-v>G')
 vim.keymap.set('n','te',':tabedit<CR>',opts)
+
